@@ -17,7 +17,17 @@ def pingfang():
             d+=c
     print(d)
 
+def ziuzhi():
+    a=input("请输入：")
+    a=a.split()
+    a=[int(num) for num in a]
+    print(str(max(a))+" "+str(min(a)))
+
 if gongnen=="fenkai":
     fenkai()        
 elif gongnen=="pingfang":
     pingfang()
+elif gongnen=="ziuzhi":
+    ziuzhi()
+else:
+    print("输入错误")
