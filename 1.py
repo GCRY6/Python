@@ -1,3 +1,8 @@
-print("Hello, world!")
-print("Hello, Python!")
-print("Hello, Git!")
+def fnakai():
+    a=input("Enter: ")
+    b=len(a)
+    for i in range(b):
+        print(a[i])
+
+if __name__=="__main__":
+    fnakai()        
