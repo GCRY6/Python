@@ -1,33 +1,26 @@
-gongnen=input("你好，请问你想要什么功能？")
 def fenkai():
-    a=input("请输入：")
-    b=len(a)
-    for i in range(b):
-        print(a[i])
+    a = input("请输入：")
+    for char in a:
+        print(char)
 
 def pingfang():
-    a=input("请输入：")
-    a=a.split()
-    a=[int(num) for num in a]
-    d=0
-    for i in range(len(a)):
-        f=a[i]
-        if f % 2==0:
-            c=f*f
-            d+=c
+    a = [int(num) for num in input("请输入：").split()]
+    d = sum(num * num for num in a if num % 2 == 0)
     print(d)
 
 def ziuzhi():
-    a=input("请输入：")
-    a=a.split()
-    a=[int(num) for num in a]
-    print(str(max(a))+" "+str(min(a)))
+    a = [int(num) for num in input("请输入：").split()]
+    print(f"{max(a)} {min(a)}")
 
-if gongnen=="fenkai":
-    fenkai()        
-elif gongnen=="pingfang":
-    pingfang()
-elif gongnen=="ziuzhi":
-    ziuzhi()
+functions = {
+    "fenkai": fenkai,
+    "pingfang": pingfang,
+    "ziuzhi": ziuzhi
+}
+
+gongnen = input("你好，请问你想要什么功能？")
+function = functions.get(gongnen)
+if function:
+    function()
 else:
     print("输入错误")
