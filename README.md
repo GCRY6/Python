@@ -1,28 +1,24 @@
-# git-dome
 # index
-我的网页项目
-这是一个简单的HTML网页项目，展示了如何使用HTML标签创建基本的网页内容。
+Python教程
+这是一个简单的Python教程网站，使用HTML编写，旨在为初学者提供Python编程语言的基本介绍、下载链接和书籍推荐。
 
 概览
-这个项目包含一个名为index.html的文件，它是一个简单的网页，包含标题、分隔线、段落、图片等基本元素。
+本项目包含一个HTML文件，该文件展示了Python编程语言的基本信息、下载链接以及针对不同学习阶段的书籍推荐。
 
 前置条件
-要查看这个网页，你需要有一个现代的网页浏览器，如Google Chrome、Mozilla Firefox、Safari或Microsoft Edge。
+要查看此项目，您需要具备以下条件：
+- 任何现代网络浏览器（如Google Chrome、Mozilla Firefox、Safari等）
 
 运行方法
-下载index.html文件到你的本地计算机。
-使用任意文本编辑器（如VS Code、Sublime Text或Notepad++）打开文件，以查看和编辑HTML代码。
-在浏览器中打开index.html文件，以查看网页的实际效果。
+1. 下载`index.html`文件到本地。
+2. 使用任意现代网络浏览器打开`index.html`文件。
+
 构建方法
-这个项目不需要特别的构建步骤。只需创建一个HTML文件并添加所需的HTML代码即可。
+由于本项目仅包含一个HTML文件，无需进行特别的构建步骤。您只需直接打开HTML文件即可查看内容。
 
 许可证
-本项目遵循MIT许可证。请查看LICENSE文件了解更多信息。
+本项目遵循MIT许可证。详情请查阅项目中的`LICENSE`文件。
 
-其他信息
-本项目中的图片链接已经移除，以避免包含个人可识别信息（PII）或不必要的超链接。
-请确保在使用或分享本项目时遵守所有适用的版权法规。
-请注意，这个README文件已经去除了原始README中的个人可识别信息（PII）和某些网站的超链接，以确保隐私和安全。
 
 # ji he
 这是一个Python脚本，定义了三个函数（fenkai、pingfang和ziuzhi），并将它们存储在一个名为functions的字典中。然后，脚本通过用户输入来选择要执行的功能。
