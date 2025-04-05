@@ -1,26 +1,27 @@
-def fenkai():
-    a = input("请输入：")
-    for char in a:
+def split_chars():  # 原fenkai函数
+    user_input = input("请输入要拆分的字符串：")
+    for char in user_input:
         print(char)
 
-def pingfang():
-    a = [int(num) for num in input("请输入：").split()]
-    d = sum(num * num for num in a if num % 2 == 0)
-    print(d)
+def sum_even_squares():  # 原pingfang函数
+    numbers = [int(num) for num in input("请输入数字，用空格分隔：").split()]
+    result = sum(num * num for num in numbers if num % 2 == 0)
+    print(f"偶数的平方和是: {result}")
 
-def ziuzhi():
-    a = [int(num) for num in input("请输入：").split()]
-    print(f"{max(a)} {min(a)}")
+def find_min_max():  # 原ziuzhi函数
+    numbers = [int(num) for num in input("请输入数字，用空格分隔：").split()]
+    print(f"最大值: {max(numbers)}, 最小值: {min(numbers)}")
 
 functions = {
-    "fenkai": fenkai,
-    "pingfang": pingfang,
-    "ziuzhi": ziuzhi
+    "split": split_chars,
+    "square": sum_even_squares,
+    "minmax": find_min_max
 }
 
-gongnen = input("你好，请问你想要什么功能？")
-function = functions.get(gongnen)
-if function:
-    function()
+print("可用功能: split(拆分字符), square(偶数平方和), minmax(找最大最小值)")
+choice = input("请选择功能：").lower()
+selected_function = functions.get(choice)
+if selected_function:
+    selected_function()
 else:
-    print("输入错误")
+    print("错误: 无效的功能选择")
