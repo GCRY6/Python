@@ -9,7 +9,7 @@ class student:
             self.grades[course]=grade
     
     def print_grade(self):
-        print(f"student {self.name} (studetn_id{self.student_id})'s grades: ")
+        print(f"student {self.name} (student_id{self.student_id})'s grades: ")
         for course in self.grades:
             print(f"{course}:{self.grades[course]}")
 
