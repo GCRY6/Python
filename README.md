@@ -1,25 +1,3 @@
-# index
-Python教程
-这是一个简单的Python教程网站，使用HTML编写，旨在为初学者提供Python编程语言的基本介绍、下载链接和书籍推荐。
-
-概览
-本项目包含一个HTML文件，该文件展示了Python编程语言的基本信息、下载链接以及针对不同学习阶段的书籍推荐。
-
-前置条件
-要查看此项目，您需要具备以下条件：
-- 任何现代网络浏览器（如Google Chrome、Mozilla Firefox、Safari等）
-
-运行方法
-1. 下载`index.html`文件到本地。
-2. 使用任意现代网络浏览器打开`index.html`文件。
-
-构建方法
-由于本项目仅包含一个HTML文件，无需进行特别的构建步骤。您只需直接打开HTML文件即可查看内容。
-
-许可证
-本项目遵循MIT许可证。详情请查阅项目中的`LICENSE`文件。
-
-
 # ji he
 这是一个Python脚本，定义了三个函数（fenkai、pingfang和ziuzhi），并将它们存储在一个名为functions的字典中。然后，脚本通过用户输入来选择要执行的功能。
 
