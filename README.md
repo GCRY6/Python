@@ -2,9 +2,9 @@
 
 基于 Python 面向对象编程实现的命令行学生成绩管理系统。
 
-    ## 运行方式
+## 运行方式
 
-    1. 确保已安装 Python 3.x
+    1. 确保已安装 Python 3.13.x
     2. 在终端执行：
     ```bash
     python Student_Management_System.py
@@ -19,9 +19,9 @@
 
 Python 实现的交互式集合操作工具集，支持字符拆分、数值计算等功能。
 
-    ## 运行方式
+## 运行方式
 
-    1. 确保已安装 Python 3.x
+    1. 确保已安装 Python 3.13.x
     2. 在终端执行：
     ```bash
     python "ji he.py"  # 注意处理文件名中的空格
@@ -34,9 +34,9 @@ Python 实现的交互式集合操作工具集，支持字符拆分、数值计�
 
 用 Python 的 Turtle 图形库绘制动态爱心图案。
 
-    ## 运行方式
+## 运行方式
 
-    1. 确保已安装 Python 3.x
+    1. 确保已安装 Python 3.13.x
     2. 在终端执行：
     ```bash
     python circle.py
