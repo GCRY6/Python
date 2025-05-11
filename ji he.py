@@ -1,14 +1,14 @@
-def split_chars():  # 原fenkai函数
+def split_chars():
     user_input = input("请输入要拆分的字符串：")
     for char in user_input:
         print(char)
 
-def sum_even_squares():  # 原pingfang函数
+def sum_even_squares():
     numbers = [int(num) for num in input("请输入数字，用空格分隔：").split()]
     result = sum(num * num for num in numbers if num % 2 == 0)
     print(f"偶数的平方和是: {result}")
 
-def find_min_max():  # 原ziuzhi函数
+def find_min_max():
     numbers = [int(num) for num in input("请输入数字，用空格分隔：").split()]
     print(f"最大值: {max(numbers)}, 最小值: {min(numbers)}")
 
