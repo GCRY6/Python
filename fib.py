@@ -17,5 +17,4 @@ for i in fib:
             break
     if is_prime:
         prime_fib.append(i)
-
 print(f"其中的素数是：{prime_fib}")
