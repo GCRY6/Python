@@ -1,8 +1,8 @@
 import numpy
 import matplotlib
 from matplotlib import pyplot
-x=[2,3,4,5,6,7,8,9,10,11,12,13,14,15]
-y=[4,16,37,49,58,145,42,4,16,37,49,58,145,42]
+x=[2,3,4,5,6,7,8]
+y=[4,16,37,49,58,145,42]
 def lagrange_interpolation(x1):
     p=[]
     L_n=0
