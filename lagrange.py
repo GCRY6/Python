@@ -1,13 +1,13 @@
 import numpy
 import matplotlib
 from matplotlib import pyplot
-
+new=int(input("请输入y值:"))
 # 修改全局周期参数并补充x=1的数据点
 period = 8
 x = [2,3,4,5,6,7,8]
 y = [4,16,37,49,58,145,42]
 x.insert(0, 1)
-y.insert(0, 2)
+y.insert(0, new)
 
 def lagrange_interpolation(x1):
     base_x = x[0]  # 基准点自动变为1
