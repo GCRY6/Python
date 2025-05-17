@@ -1,17 +1,16 @@
 import numpy
 import matplotlib
 from matplotlib import pyplot
-x=[2,3,4,5,6,7,8]
-y=[4,16,37,49,58,145,42]
-# 在全局定义周期参数
-period = 7  # 新增全局变量
+
+# 修改全局周期参数并补充x=1的数据点
+period = 8
+x = [1,2,3,4,5,6,7,8]  # 补充x=1的数据点（需要指定y值）
+y = [50,4,16,37,49,58,145,42]  # 补充对应x=1的y值
 
 def lagrange_interpolation(x1):
-    base_x = x[0]
-    # 使用全局的period变量
-    offset = (x1 - base_x) % period  # 移除了局部period定义
-    
-    mapped_x = base_x + offset
+    base_x = x[0]  # 基准点自动变为1
+    offset = (x1 - base_x) % period  # 现在按8周期计算
+    mapped_x = base_x + offset  # 映射到1-9区间
     
     p=[]
     L_n=0
@@ -28,10 +27,7 @@ def lagrange_interpolation(x1):
         L_n=L_n+y[i]*p[i]
     return round(L_n,3)
 print(lagrange_interpolation(1))
-# 修正arange参数（start, stop, step）并增加采样点
-# 调整采样范围展示3个完整周期
-# 修改后的采样范围代码
-x2 = numpy.arange(x[0] - period, x[-1] + period*2, 0.1)  # 现在可以访问全局period
+x2 = numpy.arange(1 - period, 8 + period*2, 0.1)  # 显示3个完整周期
 y2 = []
 
 for i in range(len(x2)):
